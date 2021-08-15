@@ -1,6 +1,7 @@
 import SectionContainer from "./SectionContainer"
 import Link from './Link'
 import Logo from '@/data/logo.svg'
+import { headerTitle } from '@/data/siteMetadata'
 
 export default function LayoutWrapper({ children }) {
   return (
@@ -8,10 +9,13 @@ export default function LayoutWrapper({ children }) {
 			<div className="flex flex-col justify-between h-screen">
 				<header className="flex justify-between items-center py-10">
 					<div>
-						<Link href="/" aria-label="Tailwind CSS Blog">
+						<Link href="/" aria-label="Yeeming's Blog">
 							<div className="flex justify-between items-center">
 								<div className="mr-3">
 									<Logo />
+								</div>
+								<div className="hidden sm:block text-2xl font-medium">
+									{ headerTitle }
 								</div>
 							</div>
 						</Link>

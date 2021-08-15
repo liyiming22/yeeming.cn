@@ -5,6 +5,7 @@ import { headerTitle } from '@/data/siteMetadata'
 import navLinks from '@/data/navLinks'
 import ThemeSwitch from "./ThemeSwitch"
 import MobileNav from './MobileNav'
+import Footer from './Footer'
 
 export default function LayoutWrapper({ children }) {
   return (
@@ -43,6 +44,7 @@ export default function LayoutWrapper({ children }) {
 				</header>
 			</div>
 			<main className="mb-auto">{ children }</main>
+			<Footer />
 		</SectionContainer>
 	)
 }

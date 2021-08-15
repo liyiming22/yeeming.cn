@@ -30,6 +30,9 @@ module.exports = {
           blue: '#93ddfd',
           white: '#fff',
         },
+        mail: '#EA4335',
+        github: '#181717',
+        twitter: '#1DA1F2'
       },
       typography: (theme) => ({
         DEFAULT: {
